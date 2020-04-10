@@ -1,0 +1,209 @@
+[DBUG] 2020/04/10 14:44 [./routes\route.go:51] OPTIONS: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:43] OPTIONS: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:35] OPTIONS: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:48] OPTIONS: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:36] OPTIONS: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:33] OPTIONS: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:49] OPTIONS: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:22] OPTIONS: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:41] OPTIONS: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:25] OPTIONS: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:28] OPTIONS: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:15] OPTIONS: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backendresources/app/static") and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:32] GET: /v1/admin/users/{id:uint} -> iris/controllers.GetUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:31] GET: /v1/admin/users -> iris/controllers.GetAllUsers() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:33] POST: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:34] PUT: /v1/admin/users/{id:uint} -> iris/controllers.UpdateUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:28] GET: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:35] DELETE: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:25] GET: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:36] GET: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:39] GET: /v1/admin/roles -> iris/controllers.GetAllRoles() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:40] GET: /v1/admin/roles/{id:uint} -> iris/controllers.GetRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:22] POST: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:41] POST: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:42] PUT: /v1/admin/roles/{id:uint} -> iris/controllers.UpdateRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:16] GET: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:43] DELETE: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:46] GET: /v1/admin/permissions -> iris/controllers.GetAllPermissions() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:47] GET: /v1/admin/permissions/{id:uint} -> iris/controllers.GetPermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:15] HEAD: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backendresources/app/static") and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:48] POST: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:15] GET: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backendresources/app/static") and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:49] POST: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:50] PUT: /v1/admin/permissions/{id:uint} -> iris/controllers.UpdatePermission() and 4 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:16] OPTIONS: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:44 [./routes\route.go:51] DELETE: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:44 Application: 1 registered view engine(s)
+[ERRO] 2020/04/10 14:44 CreateFile F:\IrisAdmin\backendresources: The system cannot find the file specified.
+[DBUG] 2020/04/10 14:45 [./routes\route.go:51] OPTIONS: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:43] OPTIONS: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:35] OPTIONS: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:48] OPTIONS: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:36] OPTIONS: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:33] OPTIONS: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:49] OPTIONS: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:22] OPTIONS: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:41] OPTIONS: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:25] OPTIONS: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:28] OPTIONS: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:15] OPTIONS: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:32] GET: /v1/admin/users/{id:uint} -> iris/controllers.GetUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:31] GET: /v1/admin/users -> iris/controllers.GetAllUsers() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:33] POST: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:34] PUT: /v1/admin/users/{id:uint} -> iris/controllers.UpdateUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:28] GET: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:35] DELETE: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:25] GET: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:36] GET: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:39] GET: /v1/admin/roles -> iris/controllers.GetAllRoles() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:40] GET: /v1/admin/roles/{id:uint} -> iris/controllers.GetRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:22] POST: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:41] POST: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:42] PUT: /v1/admin/roles/{id:uint} -> iris/controllers.UpdateRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:16] GET: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:43] DELETE: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:46] GET: /v1/admin/permissions -> iris/controllers.GetAllPermissions() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:47] GET: /v1/admin/permissions/{id:uint} -> iris/controllers.GetPermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:15] HEAD: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:48] POST: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:15] GET: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:49] POST: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:50] PUT: /v1/admin/permissions/{id:uint} -> iris/controllers.UpdatePermission() and 4 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:16] OPTIONS: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:45 [./routes\route.go:51] DELETE: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:45 Application: 1 registered view engine(s)
+[ERRO] 2020/04/10 14:45 CreateFile F:\IrisAdmin\backendresources: The system cannot find the file specified.
+[DBUG] 2020/04/10 14:46 [./routes\route.go:51] OPTIONS: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:43] OPTIONS: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:35] OPTIONS: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:48] OPTIONS: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:36] OPTIONS: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:33] OPTIONS: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:49] OPTIONS: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:22] OPTIONS: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:41] OPTIONS: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:25] OPTIONS: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:28] OPTIONS: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] OPTIONS: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:32] GET: /v1/admin/users/{id:uint} -> iris/controllers.GetUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:31] GET: /v1/admin/users -> iris/controllers.GetAllUsers() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:33] POST: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:34] PUT: /v1/admin/users/{id:uint} -> iris/controllers.UpdateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:28] GET: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:35] DELETE: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:25] GET: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:36] GET: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:39] GET: /v1/admin/roles -> iris/controllers.GetAllRoles() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:40] GET: /v1/admin/roles/{id:uint} -> iris/controllers.GetRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:22] POST: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:41] POST: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:42] PUT: /v1/admin/roles/{id:uint} -> iris/controllers.UpdateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:16] GET: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:43] DELETE: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:46] GET: /v1/admin/permissions -> iris/controllers.GetAllPermissions() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:47] GET: /v1/admin/permissions/{id:uint} -> iris/controllers.GetPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] HEAD: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:48] POST: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] GET: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend/resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:49] POST: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:50] PUT: /v1/admin/permissions/{id:uint} -> iris/controllers.UpdatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:16] OPTIONS: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:51] DELETE: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:46 Application: 1 registered view engine(s)
+[ERRO] 2020/04/10 14:46 CreateFile F:\IrisAdmin\backendresources: The system cannot find the file specified.
+[DBUG] 2020/04/10 14:46 [./routes\route.go:51] OPTIONS: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:43] OPTIONS: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:35] OPTIONS: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:48] OPTIONS: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:36] OPTIONS: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:33] OPTIONS: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:49] OPTIONS: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:22] OPTIONS: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:41] OPTIONS: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:25] OPTIONS: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:28] OPTIONS: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] OPTIONS: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:32] GET: /v1/admin/users/{id:uint} -> iris/controllers.GetUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:31] GET: /v1/admin/users -> iris/controllers.GetAllUsers() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:33] POST: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:34] PUT: /v1/admin/users/{id:uint} -> iris/controllers.UpdateUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:28] GET: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:35] DELETE: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:25] GET: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:36] GET: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:39] GET: /v1/admin/roles -> iris/controllers.GetAllRoles() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:40] GET: /v1/admin/roles/{id:uint} -> iris/controllers.GetRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:22] POST: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:41] POST: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:42] PUT: /v1/admin/roles/{id:uint} -> iris/controllers.UpdateRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:16] GET: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:43] DELETE: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:46] GET: /v1/admin/permissions -> iris/controllers.GetAllPermissions() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:47] GET: /v1/admin/permissions/{id:uint} -> iris/controllers.GetPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] HEAD: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:48] POST: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:15] GET: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:49] POST: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:50] PUT: /v1/admin/permissions/{id:uint} -> iris/controllers.UpdatePermission() and 4 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:16] OPTIONS: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:46 [./routes\route.go:51] DELETE: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:46 Application: 1 registered view engine(s)
+[DBUG] 2020/04/10 14:46 Application: running using 1 host(s)
+[DBUG] 2020/04/10 14:46 Host: addr is :5000
+[DBUG] 2020/04/10 14:46 Host: virtual host is localhost:5000
+[DBUG] 2020/04/10 14:46 Host: register startup notifier
+[DBUG] 2020/04/10 14:46 Host: register server shutdown on interrupt(CTRL+C/CMD+C)
+[DBUG] 2020/04/10 14:46 Host: server will ignore the following errors: [http: Server closed]
+Now listening on: http://localhost:5000
+Application started. Press CTRL+C to shut down.
+[ERRO] 2020/04/10 14:47 html/template: "app/index.html" is undefined
+[DBUG] 2020/04/10 14:55 [./routes\route.go:51] OPTIONS: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:43] OPTIONS: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:35] OPTIONS: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:48] OPTIONS: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:36] OPTIONS: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:33] OPTIONS: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:49] OPTIONS: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:22] OPTIONS: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:41] OPTIONS: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:25] OPTIONS: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:28] OPTIONS: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:15] OPTIONS: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:32] GET: /v1/admin/users/{id:uint} -> iris/controllers.GetUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:31] GET: /v1/admin/users -> iris/controllers.GetAllUsers() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:33] POST: /v1/admin/users -> iris/controllers.CreateUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:34] PUT: /v1/admin/users/{id:uint} -> iris/controllers.UpdateUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:28] GET: /v1/admin/logout -> iris/controllers.UserLogout() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:35] DELETE: /v1/admin/users/{id:uint} -> iris/controllers.DeleteUser() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:25] GET: /v1/admin/resetData -> iris/controllers.ResetData() and 2 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:36] GET: /v1/admin/users/profile -> iris/controllers.GetProfile() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:39] GET: /v1/admin/roles -> iris/controllers.GetAllRoles() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:40] GET: /v1/admin/roles/{id:uint} -> iris/controllers.GetRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:22] POST: /v1/admin/login -> iris/controllers.UserLogin() and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:41] POST: /v1/admin/roles -> iris/controllers.CreateRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:42] PUT: /v1/admin/roles/{id:uint} -> iris/controllers.UpdateRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:16] GET: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:43] DELETE: /v1/admin/roles/{id:uint} -> iris/controllers.DeleteRole() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:46] GET: /v1/admin/permissions -> iris/controllers.GetAllPermissions() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:47] GET: /v1/admin/permissions/{id:uint} -> iris/controllers.GetPermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:15] HEAD: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:48] POST: /v1/admin/permissions/import -> iris/controllers.ImportPermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:15] GET: /static/{file:path} -> HandleDir(directory: "F://IrisAdmin/backend//resources/app/static") and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:49] POST: /v1/admin/permissions -> iris/controllers.CreatePermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:50] PUT: /v1/admin/permissions/{id:uint} -> iris/controllers.UpdatePermission() and 4 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:16] OPTIONS: / -> iris/routes.App.func1() and 1 more
+[DBUG] 2020/04/10 14:55 [./routes\route.go:51] DELETE: /v1/admin/permissions/{id:uint} -> iris/controllers.DeletePermission() and 4 more
+[DBUG] 2020/04/10 14:55 Application: 1 registered view engine(s)
+[DBUG] 2020/04/10 14:55 Application: running using 1 host(s)
+[DBUG] 2020/04/10 14:55 Host: addr is :5000
+[DBUG] 2020/04/10 14:55 Host: virtual host is localhost:5000
+[DBUG] 2020/04/10 14:55 Host: register startup notifier
+[DBUG] 2020/04/10 14:55 Host: register server shutdown on interrupt(CTRL+C/CMD+C)
+[DBUG] 2020/04/10 14:55 Host: server will ignore the following errors: [http: Server closed]
+Now listening on: http://localhost:5000
+Application started. Press CTRL+C to shut down.
+[ERRO] 2020/04/10 14:55 html/template: "app/index.html" is undefined
+[ERRO] 2020/04/10 14:55 html/template: "app/index.html" is undefined
+[ERRO] 2020/04/10 14:55 html/template: "app/index.html" is undefined
+[ERRO] 2020/04/10 14:59 html/template: "app/index.html" is undefined

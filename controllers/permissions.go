@@ -1,0 +1,162 @@
+package controllers
+
+import (
+	"fmt"
+	"github.com/360EntSecGroup-Skylar/excelize"
+	"github.com/go-playground/validator/v10"
+	"github.com/kataras/iris/v12"
+	gf "github.com/snowlyg/gotransformer"
+	"iris/libs"
+	"iris/models"
+	"iris/transformer"
+	"iris/validates"
+	"time"
+)
+
+func GetPermission(ctx iris.Context) {
+	id, _ := ctx.Params().GetUint("id")
+	perm := models.NewPermission(id, "", "")
+	perm.GetPermissionById()
+	ctx.StatusCode(iris.StatusOK)
+	_, _ = ctx.JSON(ApiResource(true, permTransform(perm), "操作成功"))
+}
+
+func CreatePermission(ctx iris.Context)  {
+	aul := new(validates.PermissionRequest)
+	if err := ctx.ReadJSON(aul); err != nil{
+		ctx.StatusCode(iris.StatusOK)
+		_, _ = ctx.JSON(ApiResource(false, nil, err.Error()))
+		return
+	}
+	err := validates.Validate.Struct(*aul)
+	if err != nil{
+		errs := err.(validator.ValidationErrors)
+		for _, e := range errs.Translate(validates.ValidateTrans){
+			if len(e) > 0{
+				ctx.StatusCode(iris.StatusOK)
+				_, _ = ctx.JSON(ApiResource(false, nil, e))
+				return
+			}
+		}
+	}
+	perm := models.NewPermissionByStruct(aul)
+	perm.CreatePermission()
+	ctx.StatusCode(iris.StatusOK)
+	if perm.ID == 0 {
+		_, _ = ctx.JSON(ApiResource(false, perm, "操作失败"))
+	} else {
+		_, _ = ctx.JSON(ApiResource(true, perm, "操作成功"))
+	}
+}
+
+func UpdatePermission(ctx iris.Context)  {
+	aul := new(validates.PermissionRequest)
+	if err := ctx.ReadJSON(aul); err != nil {
+		ctx.StatusCode(iris.StatusOK)
+		_, _ = ctx.JSON(ApiResource(false, nil, err.Error()))
+		return
+	}
+	err := validates.Validate.Struct(*aul)
+	if err != nil {
+		errs := err.(validator.ValidationErrors)
+		for _, e := range errs.Translate(validates.ValidateTrans) {
+			if len(e) > 0 {
+				ctx.StatusCode(iris.StatusOK)
+				_, _ = ctx.JSON(ApiResource(false, nil, e))
+				return
+			}
+		}
+	}
+
+	id, _ := ctx.Params().GetUint("id")
+	perm := models.NewPermission(id, "", "")
+	perm.UpdatePermission(aul)
+
+	ctx.StatusCode(iris.StatusOK)
+	if perm.ID == 0 {
+		_, _ = ctx.JSON(ApiResource(false, perm, "操作失败"))
+	} else {
+		_, _ = ctx.JSON(ApiResource(true, perm, "操作成功"))
+	}
+}
+
+func DeletePermission(ctx iris.Context)  {
+	id, _ := ctx.Params().GetUint("id")
+	perm := models.NewPermission(id, "", "")
+	perm.DeletePermissionById()
+	ctx.StatusCode(iris.StatusOK)
+	_, _ = ctx.JSON(ApiResource(true, nil, "删除成功"))
+}
+
+func ImportPermission(ctx iris.Context) {
+
+	file, _, err := ctx.FormFile("file")
+	if err != nil {
+		ctx.StatusCode(iris.StatusOK)
+		_, _ = ctx.JSON(ApiResource(false, err.Error(), "导入失败"))
+		return
+	}
+
+	f, err := excelize.OpenReader(file)
+	if err != nil {
+		ctx.StatusCode(iris.StatusOK)
+		_, _ = ctx.JSON(ApiResource(false, err.Error(), "导入失败"))
+		return
+	}
+
+	// Excel 导入行数据转换
+	// 获取 Sheet1 上所有单元格
+	rows := f.GetRows("Sheet1")
+	titles := map[string]string{"0": "Name", "1": "DisplayName", "2": "Description", "3": "Act"}
+	num := 0
+	for roI, row := range rows {
+		if roI > 0 {
+			// 将数组  转成对应的 map
+			m := &validates.PermissionRequest{}
+			x := gf.NewXlxsTransform(m, titles, row, "", time.RFC3339, nil)
+			err := x.XlxsTransformer()
+			if err != nil {
+				ctx.StatusCode(iris.StatusOK)
+				_, _ = ctx.JSON(ApiResource(false, err.Error(), "导入失败"))
+				return
+			}
+
+			perm := models.NewPermissionByStruct(m)
+			perm.CreatePermission()
+			num++
+		}
+	}
+
+	ctx.StatusCode(iris.StatusOK)
+	_, _ = ctx.JSON(ApiResource(true, nil, fmt.Sprintf("成功导入%d项数据", num)))
+}
+
+
+func GetAllPermissions(ctx iris.Context) {
+	offset := libs.ParseInt(ctx.URLParam("offset"), 1)
+	limit := libs.ParseInt(ctx.URLParam("limit"), 20)
+	name := ctx.FormValue("name")
+	orderBy := ctx.FormValue("orderBy")
+
+	permissions := models.GetAllPermissions(name, orderBy, offset, limit)
+
+	ctx.StatusCode(iris.StatusOK)
+	_, _ = ctx.JSON(ApiResource(true, permsTransform(permissions), "操作成功"))
+}
+
+
+func permsTransform(perms []*models.Permission) []*transformer.Permission {
+	var rs []*transformer.Permission
+	for _, perm := range perms {
+		r := permTransform(perm)
+		rs = append(rs, r)
+	}
+	return rs
+}
+
+func permTransform(perm *models.Permission) *transformer.Permission {
+	r := &transformer.Permission{}
+	g := gf.NewTransform(r, perm, time.RFC3339)
+	_ = g.Transformer()
+	return r
+}
